@@ -1,0 +1,16 @@
+{
+    "name": "recipe-management-system",
+    "version": "1.0.0",
+    "description": "CSC311 Web Applications Project - Recipe Manager",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": ["express", "mysql", "recipes"],
+    "author": "Jayden Montez",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.18.2",
+      "mysql": "^2.18.1"
+    }
+  }

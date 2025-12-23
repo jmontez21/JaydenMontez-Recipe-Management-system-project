@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Page metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Manager - Home</title>
+    
+    <!-- External CSS stylesheet -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Client-side JavaScript -->
+    <script src="app.js"></script>
+</head>
+<body>
+    <!-- Header section -->
+    <header>
+        <h1>Recipe Management System</h1>
+        <nav>
+            <a href="index.html" class="active">Home</a>
+            <a href="recipes.html">View All Recipes</a>
+        </nav>
+    </header>
+
+    <!-- Main content area -->
+    <main>
+        <!-- Welcome section -->
+        <section class="intro">
+            <h2>Welcome!</h2>
+            <p>Manage your favorite recipes and organize them by category.</p>
+        </section>
+
+        <!-- Add recipe form section -->
+        <section class="form-section">
+            <h2>Add New Recipe</h2>
+            <form id="addRecipeForm">
+                <!-- Recipe name input -->
+                <label for="name">Recipe Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <!-- Description textarea -->
+                <label for="description">Description:</label>
+                <textarea id="description" name="description" rows="4" required></textarea>
+
+                <!-- Prep time input -->
+                <label for="prep_time">Prep Time (minutes):</label>
+                <input type="number" id="prep_time" name="prep_time" min="0" value="0">
+
+                <!-- Category dropdown -->
+                <label for="category">Category:</label>
+                <select id="category" name="category_id" required>
+                    <option value="">Select a category...</option>
+                </select>
+
+                <!-- Submit button -->
+                <button type="submit">Add Recipe</button>
+            </form>
+            
+            <!-- Message display area -->
+            <div id="message"></div>
+        </section>
+
+        <!-- Recent recipes section -->
+        <section class="recipes-list">
+            <h2>Recent Recipes</h2>
+            <div id="recipesList">
+                <p>Loading recipes...</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer section -->
+    <footer>
+        <p>&copy; 2025 Recipe Manager - Jayden Montez - CSC311 Project</p>
+    </footer>
+</body>
+</html>
